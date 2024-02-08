@@ -25,6 +25,10 @@ st.time_input('School time')
 st.text_area('Description')
 st.file_uploader('Upload a photo')
 st.color_picker('Choose your favorite color')
+st.balloons()
+st.progress(10)
+with st.spinner('Wait for it...'):
+    time.sleep(10)
 df= pd.DataFrame(np.random.randn(10, 2),
                  columns=['x', 'y'])
 st.line_chart(df)
