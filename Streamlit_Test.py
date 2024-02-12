@@ -2,6 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import graphviz as graphviz
 
 st.title("Peter's Test Site")
 st.header("**This site is a test for IST 300**")
@@ -31,3 +32,8 @@ df= pd.DataFrame(np.random.randn(10, 2),
 st.line_chart(df)
 container = st.container()
 container.write("This is my first container!")
+st.graphviz_chart('''digraph {        
+Big_shark -> Tuna        
+Tuna -> Mackerel        
+Mackerel -> Small_fishes        
+Small_fishes -> Shrimp }''')
