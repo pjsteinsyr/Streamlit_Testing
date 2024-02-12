@@ -32,8 +32,4 @@ df= pd.DataFrame(np.random.randn(10, 2),
 st.line_chart(df)
 container = st.container()
 container.write("This is my first container!")
-st.graphviz_chart('''digraph {        
-Big_shark -> Tuna        
-Tuna -> Mackerel        
-Mackerel -> Small_fishes        
-Small_fishes -> Shrimp }''')
+st.graphviz_chart('''digraph {        Big_shark -> Tuna        Tuna -> Mackerel        Mackerel -> Small_fishes        Small_fishes -> Shrimp }''')
