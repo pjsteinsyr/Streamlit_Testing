@@ -2,7 +2,6 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import time
 
 st.title("Peter's Test Site")
 st.header("**This site is a test for IST 300**")
